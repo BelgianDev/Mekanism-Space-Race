@@ -25,11 +25,4 @@ public class SpaceBlockLootTableProvider extends BlockLootSubProvider {
         add(SpaceBlocks.DUST_BLOCK.get(),
                 block -> createOreDrop(SpaceBlocks.DUST_BLOCK.get(), SpaceItems.SPACE_ROCK.get()));
     }
-
-    protected LootTable.Builder
-
-    @Override
-    protected Iterable<Block> getKnownBlocks() {
-        return SpaceBlocks.BLOCKS.getEntries().stream().map(Holder::value)::iterator;
-    }
 }

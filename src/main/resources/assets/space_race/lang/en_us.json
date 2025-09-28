@@ -1,5 +1,7 @@
 {
   "item.space_race.space_rock": "Space Rock",
 
-  "creativetab.space_race.space_race": "Space Race"
+  "block.space_race.launchpad_scaffolding": "Launchpad Scaffolding",
+
+  "category.space_race.space_race": "Mekanism: Space Race"
 }
