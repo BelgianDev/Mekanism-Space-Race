@@ -1,0 +1,12 @@
+{
+  "type": "space_race:space",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "minecraft:void",
+      "lakes": false,
+      "features": false,
+      "layers": []
+    }
+  }
+}
