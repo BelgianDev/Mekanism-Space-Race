@@ -10,16 +10,17 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
 
-public class SpaceCreativeModeTabs {
+public final class SpaceCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TAB =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Constants.MOD_ID);
 
     public static final Supplier<CreativeModeTab> SPACE_RACE_ITEMS_TAB = CREATIVE_MODE_TAB.register("space_race_items_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(SpaceItems.SPACE_ROCK.get()))
-                    .title(Component.translatable("creativetab.space_race.space_race"))
+                    .title(Component.translatable("category.space_race.space_race"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(SpaceItems.SPACE_ROCK);
                         output.accept(SpaceBlocks.DUST_BLOCK);
+                        output.accept(SpaceBlocks.LAUNCHPAD_SCAFFOLDING);
                     }).build());
 
     public static void init(IEventBus bus) {
