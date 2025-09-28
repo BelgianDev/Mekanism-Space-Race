@@ -1,7 +1,6 @@
 package be.space.race.registry;
 
 import be.space.race.Constants;
-import be.space.race.MekanismSpaceRace;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -20,6 +19,7 @@ public class SpaceCreativeModeTabs {
                     .title(Component.translatable("creativetab.space_race.space_race"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(SpaceItems.SPACE_ROCK);
+                        output.accept(SpaceBlocks.DUST_BLOCK);
                     }).build());
 
     public static void init(IEventBus bus) {
