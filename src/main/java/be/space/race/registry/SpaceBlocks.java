@@ -1,12 +1,10 @@
 package be.space.race.registry;
 
 import be.space.race.Constants;
+import net.minecraft.util.ColorRGBA;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.ScaffoldingBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -22,7 +20,7 @@ public final class SpaceBlocks {
 
     // Natural Blocks
     public static final DeferredBlock<Block> DUST_BLOCK = registerBlock("moon_dust", () ->
-            new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.BASALT)));
+            new ColoredFallingBlock(new ColorRGBA(1611611611), BlockBehaviour.Properties.ofFullCopy(Blocks.SAND)));
 
     // Helper methods
 
