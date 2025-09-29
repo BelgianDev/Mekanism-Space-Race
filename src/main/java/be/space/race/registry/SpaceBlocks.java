@@ -1,6 +1,7 @@
 package be.space.race.registry;
 
 import be.space.race.Constants;
+import mekanism.common.block.prefab.BlockBasicMultiblock;
 import net.minecraft.util.ColorRGBA;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -18,12 +19,15 @@ public final class SpaceBlocks {
     public static final DeferredBlock<Block> SPACE_ROCK = registerBlock("space_rock", () ->
             new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
+    // Launchpad
     public static final DeferredBlock<Block> LAUNCHPAD_SCAFFOLDING = registerBlock("launchpad_scaffolding", () ->
-            new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).noOcclusion()));
+            new BlockBasicMultiblock<>(SpaceBlockTypes.LAUNCHPAD_SCAFFOLDING, BlockBehaviour.Properties::noOcclusion));
 
     // Natural Blocks
     public static final DeferredBlock<Block> MOON_DUST = registerBlock("moon_dust", () ->
             new ColoredFallingBlock(new ColorRGBA(1611611611), BlockBehaviour.Properties.ofFullCopy(Blocks.SAND)));
+
+
 
     // Helper methods
 
