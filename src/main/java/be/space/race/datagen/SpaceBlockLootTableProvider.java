@@ -36,7 +36,10 @@ public class SpaceBlockLootTableProvider extends BlockLootSubProvider {
         add(SpaceBlocks.MOON_DUST.get(),
                 block -> createOreDrop(SpaceBlocks.MOON_DUST.get(), SpaceItems.TEST_ITEM.get()));
 
-        dropSelf(SpaceBlocks.LAUNCHPAD_SCAFFOLDING.get());
+        dropSelf(SpaceBlocks.LAUNCHPAD_CASING.get());
+        dropSelf(SpaceBlocks.LAUNCHPAD_PORT.get());
+        dropSelf(SpaceBlocks.LAUNCHPAD_PLATFORM.get());
+        dropSelf(SpaceBlocks.LAUNCHPAD_CONTROLLER.get());
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {

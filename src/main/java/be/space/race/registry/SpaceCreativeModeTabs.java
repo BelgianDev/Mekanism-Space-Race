@@ -22,6 +22,10 @@ public final class SpaceCreativeModeTabs {
                         output.accept(SpaceBlocks.SPACE_ROCK);
                         output.accept(SpaceBlocks.MOON_DUST);
                         output.accept(SpaceBlocks.LAUNCHPAD_SCAFFOLDING);
+                        output.accept(SpaceBlocks.LAUNCHPAD_CASING);
+                        output.accept(SpaceBlocks.LAUNCHPAD_PORT);
+                        output.accept(SpaceBlocks.LAUNCHPAD_PLATFORM);
+                        output.accept(SpaceBlocks.LAUNCHPAD_CONTROLLER);
                     }).build());
 
     public static void init(IEventBus bus) {

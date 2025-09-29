@@ -1,10 +1,8 @@
 package be.space.race.datagen;
 
 import be.space.race.Constants;
-import be.space.race.registry.SpaceBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
-import net.minecraft.tags.BlockTags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 

@@ -23,6 +23,18 @@ public final class SpaceBlocks {
     public static final DeferredBlock<Block> LAUNCHPAD_SCAFFOLDING = registerBlock("launchpad_scaffolding", () ->
             new BlockBasicMultiblock<>(SpaceBlockTypes.LAUNCHPAD_SCAFFOLDING, BlockBehaviour.Properties::noOcclusion));
 
+    public static final DeferredBlock<Block> LAUNCHPAD_CASING = registerBlock("launchpad_casing", () ->
+            new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).noOcclusion()));
+
+    public static final DeferredBlock<Block> LAUNCHPAD_PORT = registerBlock("launchpad_port", () ->
+            new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).noOcclusion()));
+
+    public static final DeferredBlock<Block> LAUNCHPAD_PLATFORM = registerBlock("launchpad_platform", () ->
+            new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).noOcclusion()));
+
+    public static final DeferredBlock<Block> LAUNCHPAD_CONTROLLER = registerBlock("launchpad_controller", () ->
+            new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).noOcclusion()));
+
     // Natural Blocks
     public static final DeferredBlock<Block> MOON_DUST = registerBlock("moon_dust", () ->
             new ColoredFallingBlock(new ColorRGBA(1611611611), BlockBehaviour.Properties.ofFullCopy(Blocks.SAND)));
