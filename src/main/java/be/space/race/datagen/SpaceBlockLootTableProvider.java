@@ -29,6 +29,7 @@ public class SpaceBlockLootTableProvider extends BlockLootSubProvider {
     @Override
     protected void generate() {
         dropSelf(SpaceBlocks.DUST_BLOCK.get());
+        dropSelf(SpaceBlocks.LAUNCHPAD_SCAFFOLDING.get());
 
         add(SpaceBlocks.DUST_BLOCK.get(),
                 block -> createOreDrop(SpaceBlocks.DUST_BLOCK.get(), SpaceItems.SPACE_ROCK.get()));

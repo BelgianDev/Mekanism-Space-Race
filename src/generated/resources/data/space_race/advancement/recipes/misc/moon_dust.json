@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_space_rock": {
+      "conditions": {
+        "items": [
+          {
+            "items": "space_race:space_rock"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "space_race:moon_dust"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_space_rock"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "space_race:moon_dust"
+    ]
+  }
+}
