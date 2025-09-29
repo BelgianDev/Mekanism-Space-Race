@@ -2,7 +2,6 @@ package be.space.race.datagen;
 
 import be.space.race.registry.SpaceBlocks;
 import be.space.race.registry.SpaceItems;
-import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
@@ -17,15 +16,15 @@ public class SpaceRecipeProvider extends RecipeProvider implements IConditionBui
 
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SpaceItems.SPACE_ROCK.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SpaceItems.TEST_ITEM.get())
                 .pattern("XXX")
                 .pattern("XXX")
                 .pattern("XXX")
-                .define('X', SpaceBlocks.DUST_BLOCK.get())
-                .unlockedBy("has_dust_block", has(SpaceBlocks.DUST_BLOCK)).save(recipeOutput);
+                .define('X', SpaceBlocks.MOON_DUST.get())
+                .unlockedBy("has_dust_block", has(SpaceBlocks.MOON_DUST)).save(recipeOutput);
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, SpaceBlocks.DUST_BLOCK.get(), 1)
-                .requires(SpaceItems.SPACE_ROCK)
-                .unlockedBy("has_space_rock", has(SpaceItems.SPACE_ROCK)).save(recipeOutput);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, SpaceBlocks.MOON_DUST.get(), 1)
+                .requires(SpaceItems.TEST_ITEM)
+                .unlockedBy("has_space_rock", has(SpaceItems.TEST_ITEM)).save(recipeOutput);
     }
 }

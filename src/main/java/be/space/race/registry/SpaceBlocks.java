@@ -15,11 +15,14 @@ import java.util.function.Supplier;
 public final class SpaceBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(Constants.MOD_ID);
 
+    public static final DeferredBlock<Block> SPACE_ROCK = registerBlock("space_rock", () ->
+            new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
     public static final DeferredBlock<Block> LAUNCHPAD_SCAFFOLDING = registerBlock("launchpad_scaffolding", () ->
             new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).noOcclusion()));
 
     // Natural Blocks
-    public static final DeferredBlock<Block> DUST_BLOCK = registerBlock("moon_dust", () ->
+    public static final DeferredBlock<Block> MOON_DUST = registerBlock("moon_dust", () ->
             new ColoredFallingBlock(new ColorRGBA(1611611611), BlockBehaviour.Properties.ofFullCopy(Blocks.SAND)));
 
     // Helper methods

@@ -15,11 +15,12 @@ public final class SpaceCreativeModeTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Constants.MOD_ID);
 
     public static final Supplier<CreativeModeTab> SPACE_RACE_ITEMS_TAB = CREATIVE_MODE_TAB.register("space_race_items_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(SpaceItems.SPACE_ROCK.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(SpaceItems.TEST_ITEM.get()))
                     .title(Component.translatable("category.space_race.space_race"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(SpaceItems.SPACE_ROCK);
-                        output.accept(SpaceBlocks.DUST_BLOCK);
+                        output.accept(SpaceItems.TEST_ITEM);
+                        output.accept(SpaceBlocks.SPACE_ROCK);
+                        output.accept(SpaceBlocks.MOON_DUST);
                         output.accept(SpaceBlocks.LAUNCHPAD_SCAFFOLDING);
                     }).build());
 

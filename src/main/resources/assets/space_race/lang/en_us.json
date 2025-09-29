@@ -1,6 +1,8 @@
 {
-  "item.space_race.space_rock": "Space Rock",
+  "item.space_race.test_item": "Test Item",
 
+  "block.space_race.space_rock": "Space Rock",
+  "block.space_race.moon_dust": "Moon Dust",
   "block.space_race.launchpad_scaffolding": "Launchpad Scaffolding",
 
   "category.space_race.space_race": "Mekanism: Space Race"

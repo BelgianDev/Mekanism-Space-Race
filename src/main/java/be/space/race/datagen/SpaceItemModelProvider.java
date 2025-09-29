@@ -13,6 +13,6 @@ public class SpaceItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        basicItem(SpaceItems.SPACE_ROCK.get());
+        basicItem(SpaceItems.TEST_ITEM.get());
     }
 }

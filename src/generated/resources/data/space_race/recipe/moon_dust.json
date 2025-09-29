@@ -3,7 +3,7 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "space_race:space_rock"
+      "item": "space_race:test_item"
     }
   ],
   "result": {

@@ -28,11 +28,15 @@ public class SpaceBlockLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
-        dropSelf(SpaceBlocks.DUST_BLOCK.get());
+        dropSelf(SpaceBlocks.SPACE_ROCK.get());
+
+        dropSelf(SpaceBlocks.MOON_DUST.get());
         dropSelf(SpaceBlocks.LAUNCHPAD_SCAFFOLDING.get());
 
-        add(SpaceBlocks.DUST_BLOCK.get(),
-                block -> createOreDrop(SpaceBlocks.DUST_BLOCK.get(), SpaceItems.SPACE_ROCK.get()));
+        add(SpaceBlocks.MOON_DUST.get(),
+                block -> createOreDrop(SpaceBlocks.MOON_DUST.get(), SpaceItems.TEST_ITEM.get()));
+
+        dropSelf(SpaceBlocks.LAUNCHPAD_SCAFFOLDING.get());
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {

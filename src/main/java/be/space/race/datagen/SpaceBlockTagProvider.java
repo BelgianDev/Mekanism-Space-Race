@@ -5,7 +5,6 @@ import be.space.race.registry.SpaceBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
-import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 
@@ -19,10 +18,5 @@ public class SpaceBlockTagProvider extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
-        tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(SpaceBlocks.DUST_BLOCK.get());
-
-        tag(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(SpaceBlocks.DUST_BLOCK.get());
     }
 }

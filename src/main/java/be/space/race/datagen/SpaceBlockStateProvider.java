@@ -14,7 +14,8 @@ public class SpaceBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        blockWithItem(SpaceBlocks.DUST_BLOCK);
+        blockWithItem(SpaceBlocks.SPACE_ROCK);
+        blockWithItem(SpaceBlocks.MOON_DUST);
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {

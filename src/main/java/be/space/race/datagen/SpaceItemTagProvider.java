@@ -22,6 +22,6 @@ public class SpaceItemTagProvider extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.@NotNull Provider provider) {
         tag(SpaceTags.Items.TRANSFORMABLE_ITEMS)
-                .add(SpaceItems.SPACE_ROCK.get());
+                .add(SpaceItems.TEST_ITEM.get());
     }
 }

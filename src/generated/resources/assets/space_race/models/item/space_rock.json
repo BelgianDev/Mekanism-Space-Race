@@ -1,6 +1,3 @@
 {
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "space_race:item/space_rock"
-  }
+  "parent": "space_race:block/space_rock"
 }

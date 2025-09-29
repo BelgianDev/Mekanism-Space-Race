@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "space_race:space_rock"
+            "items": "space_race:test_item"
           }
         ]
       },

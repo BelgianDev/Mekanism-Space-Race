@@ -9,7 +9,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public final class SpaceItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Constants.MOD_ID);
 
-    public static final DeferredItem<Item> SPACE_ROCK = ITEMS.register("space_rock",
+    public static final DeferredItem<Item> TEST_ITEM = ITEMS.register("test_item",
             () -> new Item(new Item.Properties()));
 
     public static void init(IEventBus bus) {
