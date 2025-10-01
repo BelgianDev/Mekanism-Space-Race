@@ -1,9 +1,6 @@
 package be.space.race;
 
-import be.space.race.registry.SpaceBlocks;
-import be.space.race.registry.SpaceCreativeModeTabs;
-import be.space.race.registry.SpaceItems;
-import be.space.race.registry.SpaceTileEntityTypes;
+import be.space.race.registry.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.ModContainer;
@@ -15,5 +12,6 @@ public final class MekanismSpaceRace {
         SpaceItems.init(bus);
         SpaceCreativeModeTabs.init(bus);
         SpaceTileEntityTypes.init(bus);
+        SpaceSounds.init(bus);
     }
 }
